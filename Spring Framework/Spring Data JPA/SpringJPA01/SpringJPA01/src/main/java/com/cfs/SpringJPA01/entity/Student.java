@@ -3,6 +3,7 @@ package com.cfs.SpringJPA01.entity;
 import jakarta.persistence.*;
 
 @Entity
+//@Table(name = "students")
 public class Student {
 
     @Id
@@ -10,7 +11,6 @@ public class Student {
     private long id;
 
     @Column(name = "student_name", nullable = false, length = 100)
-
     private String name;
 
     @Column(nullable = false, unique = true)
